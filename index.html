@@ -1,0 +1,83 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CampusCompass - Smart Student Life Organizer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>🎓 CampusCompass</h1>
+        <p>Your Smart Student Life Organizer</p>
+    </header>
+
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#planner">Study Planner</a>
+        <a href="#tasks">My Tasks</a>
+    </nav>
+
+    <main id="home">
+        <section class="welcome">
+            <h2>Welcome to CampusCompass!</h2>
+            <p>Organize your college life, one day at a time.</p>
+        </section>
+
+        <section class="dashboard">
+            <div class="card">
+                <h3>📚 Study Planner</h3>
+                <p>Plan your study sessions and stay focused.</p>
+            </div>
+
+            <div class="card">
+                <h3>📝 Assignments</h3>
+                <p>Keep track of your college assignments.</p>
+            </div>
+
+            <div class="card">
+                <h3>📅 Timetable</h3>
+                <p>Keep your class schedule organized.</p>
+            </div>
+        </section>
+
+        <section id="planner" class="planner">
+            <h2>My Study Planner</h2>
+            <p>Add a task you want to complete today.</p>
+
+            <div class="task-input">
+                <input type="text" id="taskInput"
+                    placeholder="Enter your study task">
+
+                <button onclick="addTask()">Add Task</button>
+            </div>
+
+            <ul id="taskList"></ul>
+        </section>
+
+        <section id="tasks" class="motivation">
+            <h2>Small Steps, Big Success!</h2>
+            <p>Stay organized. Stay consistent. Keep learning.</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2026 CampusCompass | Made by a Student, for Students</p>
+    </footer>
+
+    <script src="script.js"></script>
+
+
+h1::after {
+    content: "Your Smart Student Assistant";
+    display: block;
+    font-size: 16px;
+    font-weight: normal;
+    color: #64748b;
+    margin-top: 10px;
+    letter-spacing: 1px;
+}
+</body>
+</html>
